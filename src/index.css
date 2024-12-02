@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Edu";
+    src: url(./fonts/EduAUVICWANTArrows-VariableFont_wght.ttf) format("woff2");
+  }
+  @font-face {
+    font-family: "Dancing";
+    src: url(./fonts/DancingScript-VariableFont_wght.ttf) format("woff2");
+  }
+}
+
+.animation-modal {
+  margin-top: -50px;
+  opacity: 0;
+  animation: modal 0.5s forwards;
+}
+@keyframes modal {
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4f46e5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4338ca;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1e293b;
+}
